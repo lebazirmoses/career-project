@@ -1,0 +1,8 @@
+<h1>Career Recommendations (Demo)</h1>
+<ul>
+{% for rec in recommendations %}
+  <li>
+    <strong>{{ rec.career_name }}</strong> - {{ rec.score }}% - Reason: {{ rec.reason }}
+  </li>
+{% endfor %}
+</ul>
